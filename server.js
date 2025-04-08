@@ -30,6 +30,10 @@ app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 app.use("/api/v1/organisation", require("./routes/organisationRoutes")); // FIXED ORGANISATION ROUTE
 
+app.get("/", (req, res) => {
+  res.status(200).send("🩸 Blood Bank API is running");
+});
+
 // Server Port
 const PORT = process.env.PORT || 8080;
 
