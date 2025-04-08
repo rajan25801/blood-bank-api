@@ -17,7 +17,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(cors({
-  origin: 'https://blood-bank-frontend-dusky.vercel.app/login', // or '*' if testing
+  origin: 'https://blood-bank-frontend-dusky.vercel.app/', // or '*' if testing
   credentials: true
 }));
 app.use(morgan("dev"));
